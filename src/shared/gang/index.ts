@@ -1,7 +1,9 @@
+import { Gang } from "./Gang";
 import { GangManager } from "./GangManager";
-import { GradeLevel } from "./IGang";
+import {Grade, GradeLevel} from "./IGang";
 
-const gangManager = new GangManager();
+const gangFactory = (label: string, grades: Record<string, Grade>) => new Gang(label, grades);
+const gangManager = new GangManager(gangFactory);
 
 gangManager.addGang("none", { label: "No Gang", grades: { "0": { name: GradeLevel.Unaffiliated } } });
 
