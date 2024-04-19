@@ -862,5 +862,3 @@ itemManager.addItem("weapon_raycarbine", {
   usable: false,
   description: "A small firearm designed to be held in one hand that fires a ray",
 });
-
-
