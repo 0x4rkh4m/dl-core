@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "groups": ["errors", "style"],
+    "errors": {
+      "for-direction": {},
+      "getter-return": { "allowImplicit": true },
+      "no-async-promise-executor": {},
+      "no-await-in-loop": {},
+      "no-compare-neg-zero": {},
+      "no-cond-assign": { "allowParens": true },
+      "no-confusing-arrow": { "allowParens": true },
+      "no-constant-condition": {},
+      "no-debugger": {},
+      "no-dupe-keys": {},
+      "no-duplicate-cases": {},
+      "no-empty": { "disallowEmptyFunctions": true, "allowEmptyCatch": false },
+      "no-extra-boolean-cast": { "enforceForLogicalOperands": true },
+      "no-extra-semi": {},
+      "no-inner-declarations": { "disallowed": ["functions", "variables"] },
+      "no-irregular-whitespace": {
+        "skipStrings": true,
+        "skipComments": false,
+        "skipRegex": false,
+        "skipTemplates": false
+      },
+      "no-new-symbol": {},
+      "no-prototype-builtins": {},
+      "no-setter-return": {},
+      "no-sparse-arrays": {},
+      "no-unexpected-multiline": {},
+      "no-unsafe-finally": {},
+      "no-unsafe-negation": {},
+      "use-isnan": { "enforceForSwitchCase": true, "enforceForIndexOf": false },
+      "valid-typeof": { "requireStringLiterals": true }
+    },
+    "style": {
+      "block-spacing": { "style": "always" }
+    },
+    "ignore": ["no-debugger", "no-console"]
+  },
+  "errors": {
+    "formatter": "short"
+  }
+}
