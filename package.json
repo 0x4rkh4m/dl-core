@@ -1,0 +1,21 @@
+{
+  "name": "dl-core",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "rslint ./src/**/*.ts",
+    "format": "dprint fmt --config config/dprint.json",
+    "build": "bun lint && bun format && webpack --config config/webpack.config.cjs --mode production",
+    "dev": "bun lint && bun format && webpack serve --config config/webpack.config.cjs --mode development"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@swc/core": "^1.4.16",
+    "swc-loader": "^0.2.6",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -27,6 +27,9 @@ coverage/
 
 # IDEs
 .idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # MacOS folder config
 .DS_Store
@@ -58,5 +61,3 @@ dist/
 
 # Other
 bun.lockb
-package.json
-README.md
