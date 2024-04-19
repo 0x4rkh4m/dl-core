@@ -20,11 +20,15 @@ module.exports = (env, argv) => {
             extensions: ['.tsx', '.ts', '.js'],
         },
         output: {
-            filename: 'bundle.js',
-            path: path.resolve(__dirname, 'dist'),
+            filename: 'bundle.mjs',
+            path: path.resolve(__dirname, '../dist'),
+            libraryTarget: 'module',
+        },
+        experiments: {
+            outputModule: true,
         },
         devServer: {
-            contentBase: './dist',
+            contentBase: path.resolve(__dirname, '../dist'),
             hot: !isProduction,
         },
         optimization: {

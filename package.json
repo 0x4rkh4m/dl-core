@@ -1,6 +1,6 @@
 {
   "name": "dl-core",
-  "module": "src/index.ts",
+  "module": "dist/bundle.mjs",
   "type": "module",
   "scripts": {
     "lint": "rslint ./src/**/*.ts",
