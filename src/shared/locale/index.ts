@@ -1,8 +1,8 @@
-import { Locale } from "./Locale";
 import { LocaleManager } from "./LocaleManager";
 import { ILocale } from "./ILocale";
+import {LocaleFactory} from "./di/LocaleFactory";
 
-const localeFactory = (localeData: ILocale) => new Locale(localeData);
+const localeFactory = new LocaleFactory();
 const localeManager = new LocaleManager(localeFactory);
 
 const englishLocale: ILocale = {
