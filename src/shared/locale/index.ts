@@ -1,23 +1,23 @@
-import { LocaleManager } from "./LocaleManager";
+import { LocaleFactory } from "./di/LocaleFactory";
 import { ILocale } from "./ILocale";
-import {LocaleFactory} from "./di/LocaleFactory";
+import { LocaleManager } from "./LocaleManager";
 
 const localeFactory = new LocaleFactory();
 const localeManager = new LocaleManager(localeFactory);
 
 const englishLocale: ILocale = {
-    phrases: {
-        //TODO: Add English translations
-    },
-    warnOnMissing: true,
+  phrases: {
+    // TODO: Add English translations
+  },
+  warnOnMissing: true,
 };
 
 const spanishLocale: ILocale = {
-    phrases: {
-        //TODO: Add Spanish translations
-    },
-    fallbackLang: englishLocale,
-    warnOnMissing: true,
+  phrases: {
+    // TODO: Add Spanish translations
+  },
+  fallbackLang: englishLocale,
+  warnOnMissing: true,
 };
 
 localeManager.addLocale("en", englishLocale);

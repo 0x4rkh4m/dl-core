@@ -1,6 +1,6 @@
 import { Gang } from "./Gang";
 import { GangManager } from "./GangManager";
-import {Grade, GradeLevel} from "./IGang";
+import { Grade, GradeLevel } from "./IGang";
 
 const gangFactory = (label: string, grades: Record<string, Grade>) => new Gang(label, grades);
 const gangManager = new GangManager(gangFactory);

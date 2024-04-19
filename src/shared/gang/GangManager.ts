@@ -1,5 +1,5 @@
 import { Gang } from "./Gang";
-import {Grade, IGang} from "./IGang";
+import { Grade, IGang } from "./IGang";
 
 export class GangManager {
   private readonly _gangs: Record<string, Gang>;
